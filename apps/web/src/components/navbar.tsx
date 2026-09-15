@@ -84,10 +84,10 @@ export function Navbar() {
         <Link
           href="/"
           className="flex items-center gap-2 font-semibold text-gray-900 dark:text-gray-100"
-          aria-label="STELLAR home"
+          aria-label="SOLARIS home"
         >
           <Sun className="h-5 w-5 text-yellow-500" aria-hidden="true" />
-          STELLAR
+          SOLARIS
         </Link>
 
         {/* Desktop nav links */}

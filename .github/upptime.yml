@@ -1,5 +1,5 @@
 owner: AnnabelJoe
-repo: stellar-proof-status   # separate repo for status page (create at github.com/Julianemeka/STELLAR-status)
+repo: solaris-status   # separate repo for status page (create at github.com/Julianemeka/SOLARIS-status)
 
 sites:
   - name: API Health
@@ -8,9 +8,9 @@ sites:
     url: $APP_URL/verify
 
 status-website:
-  cname: status.stellar-proof.app   # optional custom domain
-  name: STELLAR Status
-  logoUrl: https://stellar-proof.vercel.app/favicon.ico
+  cname: status.solaris.app   # optional custom domain
+  name: SOLARIS Status
+  logoUrl: https://solaris.vercel.app/favicon.ico
 
 # Upptime retains 30 days of history in the repo via git commits.
 # See https://upptime.js.org for setup instructions.

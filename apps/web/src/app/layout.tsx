@@ -9,14 +9,14 @@ import { SpeedInsights } from '@vercel/speed-insights/next'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'STELLAR — Cryptographic Renewable Energy Certification on Stellar',
+  title: 'SOLARIS — Cryptographic Renewable Energy Certification on Stellar',
   description:
     'End-to-end cryptographic proof of renewable energy. Every kWh signed at the meter, anchored on Stellar, publicly verifiable.',
   openGraph: {
-    title: 'STELLAR',
+    title: 'SOLARIS',
     description: 'Cryptographic renewable energy certification on Stellar',
-    url: 'https://stellar-proof.vercel.app',
-    siteName: 'STELLAR',
+    url: 'https://solaris.vercel.app',
+    siteName: 'SOLARIS',
   },
 }
 

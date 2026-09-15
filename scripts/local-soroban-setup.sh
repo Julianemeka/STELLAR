@@ -19,12 +19,12 @@ cd "$ROOT"
 echo "Starting local Soroban sandbox container..."
 docker pull stellar/quickstart:soroban
 
-if docker ps -a --format '{{.Names}}' | grep -q '^stellar-proof-soroban$'; then
-  docker rm -f stellar-proof-soroban >/dev/null 2>&1 || true
+if docker ps -a --format '{{.Names}}' | grep -q '^solaris-soroban$'; then
+  docker rm -f solaris-soroban >/dev/null 2>&1 || true
 fi
 
 docker run -d \
-  --name stellar-proof-soroban \
+  --name solaris-soroban \
   -p 8000:8000 \
   -p 11626:11626 \
   -v "$ROOT":/repo \
@@ -50,7 +50,7 @@ cat <<'EOF'
    NEXT_PUBLIC_SUPABASE_URL
    NEXT_PUBLIC_SUPABASE_ANON_KEY
    SUPABASE_SERVICE_ROLE_KEY
-3. Start the Next.js app with `pnpm --filter @stellar-proof/web dev`.
+3. Start the Next.js app with `pnpm --filter @solaris/web dev`.
 4. Run the integration test script:
    pnpm exec node scripts/local-soroban-integration.mjs
 EOF

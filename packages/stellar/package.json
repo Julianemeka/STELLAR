@@ -1,7 +1,7 @@
 {
-  "name": "@stellar-proof/stellar",
+  "name": "@solaris/stellar",
   "version": "1.0.0",
-  "description": "Shared Stellar/Soroban utilities for STELLAR",
+  "description": "Shared Stellar/Soroban utilities for SOLARIS",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",

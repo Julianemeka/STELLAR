@@ -1,9 +1,9 @@
-# STELLAR — Threat Model
+# SOLARIS — Threat Model
 
 ## System overview
 
 ```
-Smart Meter → STELLAR API (Next.js) → Stellar/Soroban contracts
+Smart Meter → SOLARIS API (Next.js) → Stellar/Soroban contracts
                      ↕
                  Supabase (off-chain store)
 ```
@@ -13,7 +13,7 @@ Smart Meter → STELLAR API (Next.js) → Stellar/Soroban contracts
 | Boundary | Trust level |
 |---|---|
 | Smart meter device | Trusted if Ed25519 keypair is uncompromised |
-| STELLAR API | Trusted server; holds `MINTER_SECRET_KEY` |
+| SOLARIS API | Trusted server; holds `MINTER_SECRET_KEY` |
 | Stellar network | Trusted (Byzantine fault-tolerant consensus) |
 | Supabase | Trusted for availability; not trusted for integrity (hash is the source of truth) |
 | Public verifier callers | Untrusted |

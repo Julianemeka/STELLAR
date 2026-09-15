@@ -1,6 +1,6 @@
 # Architecture Decision Records
 
-This directory contains ADRs for key design decisions in STELLAR.
+This directory contains ADRs for key design decisions in SOLARIS.
 
 Use [template.md](template.md) when creating a new ADR.
 

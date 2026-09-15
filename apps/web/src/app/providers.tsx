@@ -8,7 +8,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
   const [qc] = useState(() => new QueryClient())
   return (
     <QueryClientProvider client={qc}>
-      <ThemeProvider attribute="class" defaultTheme="system" enableSystem storageKey="stellar-proof-theme">
+      <ThemeProvider attribute="class" defaultTheme="system" enableSystem storageKey="solaris-theme">
         {children}
       </ThemeProvider>
     </QueryClientProvider>

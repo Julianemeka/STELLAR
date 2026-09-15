@@ -1,6 +1,6 @@
 # Developer Onboarding Guide
 
-Welcome to STELLAR. This guide gets you from zero to a running local environment with a simulated meter reading end-to-end.
+Welcome to SOLARIS. This guide gets you from zero to a running local environment with a simulated meter reading end-to-end.
 
 ---
 
@@ -30,8 +30,8 @@ stellar --version   # stellar x.x.x
 ## 1. Clone and install
 
 ```bash
-git clone https://github.com/Julianemeka/STELLAR.git
-cd STELLAR
+git clone https://github.com/Julianemeka/SOLARIS.git
+cd SOLARIS
 pnpm install
 ```
 
@@ -218,7 +218,7 @@ Open [http://localhost:3000/verify](http://localhost:3000/verify) and enter the 
 ## Project structure recap
 
 ```
-STELLAR/
+SOLARIS/
 ├── apps/
 │   ├── contracts/          # Soroban smart contracts (Rust)
 │   │   ├── energy_token/

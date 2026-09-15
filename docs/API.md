@@ -1,6 +1,6 @@
 # API Reference
 
-Base URL: `https://stellar-proof.vercel.app` (production) · `http://localhost:3000` (local)
+Base URL: `https://solaris.vercel.app` (production) · `http://localhost:3000` (local)
 
 All responses are JSON. Timestamps are ISO 8601 strings unless noted.
 

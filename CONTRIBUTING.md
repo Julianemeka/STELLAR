@@ -1,4 +1,4 @@
-# Contributing to STELLAR
+# Contributing to SOLARIS
 
 Thanks for contributing! PRs target `develop`. All CI must pass before merge.
 
@@ -11,8 +11,8 @@ Thanks for contributing! PRs target `develop`. All CI must pass before merge.
 3. Fork and branch from `develop`
 
 ```bash
-git clone https://github.com/Julianemeka/STELLAR.git
-cd STELLAR
+git clone https://github.com/Julianemeka/SOLARIS.git
+cd SOLARIS
 git checkout develop
 git checkout -b feat/your-feature
 pnpm install

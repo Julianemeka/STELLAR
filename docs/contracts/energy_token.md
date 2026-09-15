@@ -96,7 +96,7 @@ Returns the admin address.
 
 ### `name(env) → String`
 
-Returns `"STELLAR Energy Certificate"`.
+Returns `"SOLARIS Energy Certificate"`.
 
 ### `symbol(env) → String`
 

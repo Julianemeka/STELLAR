@@ -6,7 +6,7 @@
 set -euo pipefail
 
 TIMESTAMP=$(date -u +%Y%m%dT%H%M%SZ)
-FILENAME="stellar-proof-backup-${TIMESTAMP}.dump"
+FILENAME="solaris-backup-${TIMESTAMP}.dump"
 TMPFILE="/tmp/${FILENAME}"
 
 alert() {
@@ -14,7 +14,7 @@ alert() {
   if [[ -n "${SLACK_BACKUP_WEBHOOK:-}" ]]; then
     curl -s -X POST "$SLACK_BACKUP_WEBHOOK" \
       -H 'Content-Type: application/json' \
-      -d "{\"text\":\"🚨 *STELLAR DB backup failed*\n${1}\"}"
+      -d "{\"text\":\"🚨 *SOLARIS DB backup failed*\n${1}\"}"
   fi
   exit 1
 }

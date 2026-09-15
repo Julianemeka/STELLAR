@@ -2,7 +2,7 @@
 /**
  * scripts/send-reading.mjs
  *
- * Simulate a smart meter sending a signed reading to the STELLAR API.
+ * Simulate a smart meter sending a signed reading to the SOLARIS API.
  *
  * Usage:
  *   node scripts/send-reading.mjs \

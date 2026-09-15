@@ -1,5 +1,5 @@
 import { Keypair, TransactionBuilder, Networks, BASE_FEE, Contract, rpc } from '@stellar/stellar-sdk'
-import { kwhToStroops, amountToScVal, addressToScVal, bytesToScVal } from '@stellar-proof/stellar'
+import { kwhToStroops, amountToScVal, addressToScVal, bytesToScVal } from '@solaris/stellar'
 import { env } from '@/env'
 
 const NETWORK_PASSPHRASE = Networks.TESTNET

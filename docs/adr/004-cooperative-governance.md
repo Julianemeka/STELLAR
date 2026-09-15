@@ -5,7 +5,7 @@
 
 ## Context
 
-STELLAR must support decentralised decision-making for:
+SOLARIS must support decentralised decision-making for:
 
 - Contract upgrades
 - Quorum and voting period adjustments

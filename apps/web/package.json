@@ -1,5 +1,5 @@
 {
-  "name": "@stellar-proof/web",
+  "name": "@solaris/web",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -13,7 +13,7 @@
   "dependencies": {
     "@noble/ed25519": "^3.2.0",
     "@sentry/nextjs": "^9.0.0",
-    "@stellar-proof/stellar": "workspace:*",
+    "@solaris/stellar": "workspace:*",
     "@stellar/stellar-sdk": "^13.1.0",
     "@supabase/supabase-js": "^2.46.2",
     "@t3-oss/env-nextjs": "0.11.1",

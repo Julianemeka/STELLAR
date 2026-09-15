@@ -1,5 +1,5 @@
 # Supabase local dev config — https://supabase.com/docs/guides/cli/config
-project_id = "stellar-proof"
+project_id = "solaris"
 
 [api]
 port = 54321

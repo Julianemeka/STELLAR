@@ -1,13 +1,13 @@
-# STELLAR
+# SOLARIS
 
 > End-to-end cryptographic proof of renewable energy — from physical meter to on-chain certificate.
 
-[![CI](https://github.com/Julianemeka/STELLAR/actions/workflows/ci.yml/badge.svg)](https://github.com/Julianemeka/STELLAR/actions/workflows/ci.yml)
+[![CI](https://github.com/Julianemeka/SOLARIS/actions/workflows/ci.yml/badge.svg)](https://github.com/Julianemeka/SOLARIS/actions/workflows/ci.yml)
 [![License](https://img.shields.io/badge/License-Apache%202.0-green)](LICENSE)
 [![Stellar](https://img.shields.io/badge/Stellar-Soroban-blue?logo=stellar)](https://stellar.org)
 [![Tests](https://img.shields.io/badge/Tests-passing-brightgreen)](#)
 
-**STELLAR** closes the gap between physical energy generation and verifiable on-chain certification. Every kilowatt-hour is signed at the meter, anchored to Stellar, and publicly auditable — no trust required.
+**SOLARIS** closes the gap between physical energy generation and verifiable on-chain certification. Every kilowatt-hour is signed at the meter, anchored to Stellar, and publicly auditable — no trust required.
 
 ---
 
@@ -15,7 +15,7 @@
 
 Existing renewable energy certificate systems (I-REC, TIGR, Energy Web) have a critical weakness: **there is no cryptographic link between the physical meter reading and the on-chain certificate**. Anyone can mint a certificate. Nobody can prove it corresponds to real generation.
 
-STELLAR fixes this with three guarantees:
+SOLARIS fixes this with three guarantees:
 
 1. **Signed at source** — each meter reading is Ed25519-signed by the device before leaving the hardware
 2. **Anchored on-chain** — the signed reading hash is recorded on Stellar alongside the minted certificate
@@ -29,7 +29,7 @@ STELLAR fixes this with three guarantees:
 Smart Meter (Ed25519 keypair)
         │  POST /api/readings  { kwh, timestamp, signature }
         ▼
-STELLAR API (Next.js)
+SOLARIS API (Next.js)
         │  1. Verify Ed25519 signature
         │  2. Anchor reading hash to Stellar (audit_registry contract)
         │  3. Mint energy_token (1 token = 1 kWh)
@@ -40,7 +40,7 @@ Stellar Testnet (Soroban)
         ├── audit_registry      — immutable signed-reading anchors
         └── community_governance — cooperative proposals + voting
         ▼
-Public Verifier  (https://stellar-proof.vercel.app/verify)
+Public Verifier  (https://solaris.vercel.app/verify)
         │  Input: certificate ID or tx hash
         │  Output: full chain of custody
         └── meter reading → Ed25519 proof → ledger anchor → certificate → retirement
@@ -50,7 +50,7 @@ Public Verifier  (https://stellar-proof.vercel.app/verify)
 
 ## What makes it unique
 
-| Feature | STELLAR | I-REC | Energy Web |
+| Feature | SOLARIS | I-REC | Energy Web |
 |---|---|---|---|
 | Cryptographic meter proof | ✅ Ed25519 | ❌ | ❌ |
 | On-chain audit anchor | ✅ Soroban | ❌ | Partial |
@@ -86,8 +86,8 @@ Built with **Soroban SDK 23.1.0** and **OpenZeppelin Stellar v0.5.1**.
 ### Install
 
 ```bash
-git clone https://github.com/Julianemeka/STELLAR.git
-cd STELLAR
+git clone https://github.com/Julianemeka/SOLARIS.git
+cd SOLARIS
 pnpm install
 ```
 
@@ -139,7 +139,7 @@ node scripts/send-reading.mjs --kwh 12.5 --meter-key ./meter-key.json
 ## Monorepo Structure
 
 ```
-STELLAR/
+SOLARIS/
 ├── apps/
 │   ├── contracts/
 │   │   ├── energy_token/
@@ -194,4 +194,4 @@ Apache-2.0 — See [LICENSE](LICENSE).
 
 ---
 
-*Built on Stellar · STELLAR Contributors 2026*
+*Built on Stellar · SOLARIS Contributors 2026*

@@ -23,7 +23,7 @@ const features = [
 
 const steps = [
   'Smart meter signs reading with its Ed25519 private key',
-  'STELLAR API verifies signature and anchors reading hash on Stellar',
+  'SOLARIS API verifies signature and anchors reading hash on Stellar',
   'Energy certificates minted (1 token = 1 kWh) — linked to the anchor',
   'Buyer purchases and retires certificate — burn recorded on-chain',
   'Anyone verifies the full chain at /verify with no login required',
@@ -38,7 +38,7 @@ export default function HomePage() {
           <Sun className="h-12 w-12 text-yellow-400 sm:h-14 sm:w-14" aria-hidden="true" />
         </div>
         <h1 className="mb-4 text-4xl font-bold tracking-tight text-gray-900 dark:text-gray-100 sm:text-5xl">
-          STELLAR
+          SOLARIS
         </h1>
         <p className="mx-auto mb-2 max-w-xl text-base text-gray-600 dark:text-gray-400 sm:text-lg">
           End-to-end cryptographic proof of renewable energy on Stellar.

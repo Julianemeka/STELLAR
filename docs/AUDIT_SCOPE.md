@@ -1,8 +1,8 @@
-# STELLAR — Security Audit Scope
+# SOLARIS — Security Audit Scope
 
 ## Overview
 
-STELLAR is an end-to-end cryptographic proof system for renewable energy generation. This document defines the scope for a third-party security audit prior to mainnet deployment.
+SOLARIS is an end-to-end cryptographic proof system for renewable energy generation. This document defines the scope for a third-party security audit prior to mainnet deployment.
 
 ## Contracts in scope
 

@@ -5,7 +5,7 @@
 
 ## Context
 
-STELLAR requires a smart contract platform to anchor meter readings and mint energy certificates. Key requirements:
+SOLARIS requires a smart contract platform to anchor meter readings and mint energy certificates. Key requirements:
 
 - Low, predictable transaction fees (high-frequency meter anchoring)
 - Native Ed25519 signature verification

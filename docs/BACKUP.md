@@ -9,10 +9,10 @@ Daily `pg_dump` backups of the Supabase Postgres database are uploaded to S3 and
 ### 1. Create an S3 bucket
 
 ```bash
-aws s3api create-bucket --bucket stellar-proof-backups --region us-east-1
+aws s3api create-bucket --bucket solaris-backups --region us-east-1
 # Enable versioning (optional but recommended)
 aws s3api put-bucket-versioning \
-  --bucket stellar-proof-backups \
+  --bucket solaris-backups \
   --versioning-configuration Status=Enabled
 ```
 
@@ -27,7 +27,7 @@ Attach a policy that allows only `s3:PutObject`, `s3:GetObject`, `s3:DeleteObjec
 | `SUPABASE_DB_URL` | Secret | Supabase direct connection string (`postgresql://...`) |
 | `BACKUP_AWS_ACCESS_KEY_ID` | Secret | IAM access key |
 | `BACKUP_AWS_SECRET_ACCESS_KEY` | Secret | IAM secret key |
-| `BACKUP_S3_BUCKET` | Variable | `stellar-proof-backups` |
+| `BACKUP_S3_BUCKET` | Variable | `solaris-backups` |
 | `BACKUP_AWS_REGION` | Variable | `us-east-1` |
 | `SLACK_BACKUP_WEBHOOK` | Secret | Slack incoming webhook URL (for failure alerts) |
 
@@ -39,7 +39,7 @@ The Supabase direct connection string is found in the Supabase dashboard under *
 
 ```bash
 export DATABASE_URL="postgresql://..."
-export S3_BUCKET="stellar-proof-backups"
+export S3_BUCKET="solaris-backups"
 export AWS_ACCESS_KEY_ID="..."
 export AWS_SECRET_ACCESS_KEY="..."
 export AWS_DEFAULT_REGION="us-east-1"
@@ -55,10 +55,10 @@ bash scripts/backup-db.sh
 
 ```bash
 # List available backups
-aws s3 ls s3://stellar-proof-backups/backups/
+aws s3 ls s3://solaris-backups/backups/
 
 # Download a specific backup
-aws s3 cp s3://stellar-proof-backups/backups/stellar-proof-backup-<TIMESTAMP>.dump ./restore.dump
+aws s3 cp s3://solaris-backups/backups/solaris-backup-<TIMESTAMP>.dump ./restore.dump
 ```
 
 ### 2. Restore to a target database

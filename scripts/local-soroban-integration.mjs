@@ -3,7 +3,7 @@
 import { createHash, createSign, randomUUID } from 'crypto'
 import { createClient } from '@supabase/supabase-js'
 import { Keypair } from '@stellar/stellar-sdk'
-import { kwhToStroops } from '@stellar-proof/stellar'
+import { kwhToStroops } from '@solaris/stellar'
 
 const API_URL = process.env.API_URL || 'http://localhost:3000'
 const SUPABASE_URL = process.env.SUPABASE_URL

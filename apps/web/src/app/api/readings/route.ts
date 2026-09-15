@@ -4,7 +4,7 @@ import { z } from 'zod'
 import { createServiceClient } from '@/lib/supabase'
 import { anchorReading, mintCertificates } from '@/lib/stellar'
 import { computeReadingHash } from '@/lib/crypto'
-import { kwhToStroops } from '@stellar-proof/stellar'
+import { kwhToStroops } from '@solaris/stellar'
 import { invalidateCert } from '@/lib/cache'
 
 function extractErrorMessage(err: unknown): string {
