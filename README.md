@@ -2,7 +2,7 @@
 
 > End-to-end cryptographic proof of renewable energy — from physical meter to on-chain certificate.
 
-[![CI](https://github.com/Julianemeka/STELLAR/actions/workflows/ci.yml/badge.svg)](https://github.com/Julianemeka/STELLAR/actions/workflows/ci.yml)
+[![CI](https://github.com/Julianemeka/solaris/actions/workflows/ci.yml/badge.svg)](https://github.com/Julianemeka/solaris/actions/workflows/ci.yml)
 [![License](https://img.shields.io/badge/License-Apache%202.0-green)](LICENSE)
 [![Stellar](https://img.shields.io/badge/Stellar-Soroban-blue?logo=stellar)](https://stellar.org)
 [![Tests](https://img.shields.io/badge/Tests-passing-brightgreen)](#)
@@ -86,7 +86,7 @@ Built with **Soroban SDK 23.1.0** and **OpenZeppelin Stellar v0.5.1**.
 ### Install
 
 ```bash
-git clone https://github.com/Julianemeka/SOLARIS.git
+git clone https://github.com/Julianemeka/solaris.git
 cd SOLARIS
 pnpm install
 ```

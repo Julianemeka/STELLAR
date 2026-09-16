@@ -11,7 +11,7 @@ Thanks for contributing! PRs target `develop`. All CI must pass before merge.
 3. Fork and branch from `develop`
 
 ```bash
-git clone https://github.com/Julianemeka/SOLARIS.git
+git clone https://github.com/Julianemeka/solaris.git
 cd SOLARIS
 git checkout develop
 git checkout -b feat/your-feature

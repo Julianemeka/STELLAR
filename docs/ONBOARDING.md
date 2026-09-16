@@ -30,7 +30,7 @@ stellar --version   # stellar x.x.x
 ## 1. Clone and install
 
 ```bash
-git clone https://github.com/Julianemeka/SOLARIS.git
+git clone https://github.com/Julianemeka/solaris.git
 cd SOLARIS
 pnpm install
 ```

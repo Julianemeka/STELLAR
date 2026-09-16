@@ -1,5 +1,5 @@
 owner: AnnabelJoe
-repo: solaris-status   # separate repo for status page (create at github.com/Julianemeka/SOLARIS-status)
+repo: solaris-status   # separate repo for status page (create at github.com/Julianemeka/solaris-status)
 
 sites:
   - name: API Health
